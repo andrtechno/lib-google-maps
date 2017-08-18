@@ -1,7 +1,7 @@
 {
     "name": "panix/lib-google-maps",
-    "description": "Google Maps API library for Yii2.",
-    "keywords": ["yii2", "extension", "library", "google", "maps"],
+    "description": "Google Maps API library for CORNER CMS",
+    "keywords": ["corner-cms", "extension", "library", "google", "maps"],
     "type": "library",
     "license": "BSD-3-Clause",
     "authors": [
