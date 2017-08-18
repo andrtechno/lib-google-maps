@@ -5,25 +5,11 @@ Google Maps API library for CORNER CMS
 
 [![Latest Stable Version](https://poser.pugx.org/panix/lib-google-maps/v/stable.svg)](https://packagist.org/packages/panix/lib-google-maps) [![Total Downloads](https://poser.pugx.org/panix/lib-google-maps/downloads.svg)](https://packagist.org/packages/panix/lib-google-maps) [![Latest Unstable Version](https://poser.pugx.org/panix/lib-google-maps/v/unstable.svg)](https://packagist.org/packages/panix/lib-google-maps) [![License](https://poser.pugx.org/panix/lib-google-maps/license.svg)](https://packagist.org/packages/panix/lib-google-maps)
 
-Введение
-------------
-Even though we already created an extension to display maps that are away from Google's policies and works with
-[LeafLetJs](http://leafletjs.com/ "http://leafletjs.com/") library, we still received requests to have
-[EGMap extension for Yii1](http://www.yiiframework.com/extension/egmap) updated. So we thought that we should update
-this library and make it work with Yii2 if we were to update it. Thats the reason behind the creation of this extension.
-
-Nevertheless, it is important to note that we didn't have time (**yet**) to write any good documentation about it.
-We wanted to publish it already, just in case somebody working with Yii2 was missing the EGMap library for its projects,
-and wishes to update us with its tests and bug findings.
-
-The github repository will keep being updated, and documentation well written for its usage. So please, do not be
-impatient. If you do, any help will be highly appreciated.
-
 ## Установка
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+Предпочтительным способом установки этого расширения является [composer](http://getcomposer.org/download/).
 
-Either run
+Либо запустите
 
 ```
 php composer.phar require "panix/lib-google-maps" "*"
@@ -34,14 +20,14 @@ php composer.phar require "panix/lib-google-maps" "*"
 "panix/lib-google-maps" : "*"
 ```
 
-to the require section of your application's `composer.json` file.
+В раздел require вашего приложения `composer.json` файла.
 
-## Usage
+## Применение
 
-Even though there will be plenty of examples on how to use it, here is one that will provide you with a glimpse of its
-usage:
+Несмотря на то, что будет много примеров того, как его использовать, вот один из них, который поможет вам взглянуть на его
+Применение:
 
-## Service
+## Обслуживание
 ```php
 use panix\lib\google\maps\LatLng;
 use panix\lib\google\maps\services\DirectionsWayPoint;
@@ -162,12 +148,12 @@ $direction = new DirectionsClient([
 $data = $direction->lookup(); //get data from google.maps API
 ```
 
-This extension has also a plugin architecture that allow us to enhance it, so expect plugins to be developed in near
-future too.
+Это расширение имеет также плагиновую архитектуру, которая позволяет нам ее улучшить, поэтому ожидаем, что плагины будут разработаны в
+Будущее тоже.
 
 ## Конфигурация
 
-To configure the Google Map key or other options like language, version, library, use the [Asset Bundle customization](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#customizing-asset-bundles) feature.
+Чтобы настроить ключ Карты Google или другие параметры, такие как language, version, library, use the [Asset Bundle customization](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#customizing-asset-bundles) feature.
 
 ```php
 'components' => [
@@ -185,7 +171,7 @@ To configure the Google Map key or other options like language, version, library
 ],
 ```
 
-Чтобы получить ключ, пожалуйста, посетите https://code.google.com/apis/console/
+Чтобы получить ключ, посетите https://code.google.com/apis/console/
 
 ## Ресурсы
 
