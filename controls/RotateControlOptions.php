@@ -4,10 +4,10 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps;
+namespace panix\lib\google\maps;
 
 
-use dosamigos\google\maps\controls\ControlPosition;
+use panix\lib\google\maps\controls\ControlPosition;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 
@@ -26,7 +26,7 @@ use yii\helpers\ArrayHelper;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class RotateControlOptions extends ObjectAbstract
 {

@@ -4,10 +4,10 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\layers;
+namespace panix\lib\google\maps\layers;
 
 
-use dosamigos\google\maps\ObjectAbstract;
+use panix\lib\google\maps\ObjectAbstract;
 use yii\base\InvalidConfigException;
 
 /**
@@ -18,7 +18,7 @@ use yii\base\InvalidConfigException;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps\layers
+ * @package panix\lib\google\maps\layers
  */
 class Layer extends ObjectAbstract
 {

@@ -4,9 +4,9 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps;
+namespace panix\lib\google\maps;
 
-use dosamigos\google\maps\overlays\Marker;
+use panix\lib\google\maps\overlays\Marker;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
@@ -80,7 +80,7 @@ use yii\helpers\ArrayHelper;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class Map extends ObjectAbstract
 {
@@ -419,7 +419,7 @@ class Map extends ObjectAbstract
         }
 
         foreach ($this->getPlugins()->getInstalledPlugins() as $plugin) {
-            /** @var \dosamigos\google\maps\PluginAbstract $plugin */
+            /** @var \panix\lib\google\maps\PluginAbstract $plugin */
             $plugin->map = $this->getName();
             $js[] = $plugin->getJs($name);
         }

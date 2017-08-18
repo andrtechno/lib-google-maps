@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\overlays;
+namespace panix\lib\google\maps\overlays;
 
 
 /**
@@ -16,7 +16,7 @@ namespace dosamigos\google\maps\overlays;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps\overlays
+ * @package panix\lib\google\maps\overlays
  */
 class SymbolPath
 {

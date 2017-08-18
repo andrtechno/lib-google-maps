@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps;
+namespace panix\lib\google\maps;
 
 /**
  * Encoder
@@ -15,7 +15,7 @@ namespace dosamigos\google\maps;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class Encoder
 {
@@ -44,9 +44,9 @@ class Encoder
     }
 
     /**
-     * Generates all values needed for the encoded Google Maps [\dosamigos\google\maps\overlays\Polyline].
+     * Generates all values needed for the encoded Google Maps [\panix\lib\google\maps\overlays\Polyline].
      *
-     * @param array $points Multidimensional input array of [\dosamigos\google\maps\Point] elements
+     * @param array $points Multidimensional input array of [\panix\lib\google\maps\Point] elements
      *
      * @return stdClass    Simple object containing three public parameter:
      *                    - points: the points string with escaped backslashes

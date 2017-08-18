@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\controls;
+namespace panix\lib\google\maps\controls;
 
 
 /**
@@ -16,9 +16,9 @@ namespace dosamigos\google\maps\controls;
  * [documentation](https://developers.google.com/maps/documentation/javascript/reference#MapTypeControlStyle) at Google.
  *
  * ```
- * use dosamigos\google\maps\controls\MapTypeControlOptions;
- * use dosamigos\google\maps\controls\MapTypeControlStyle;
- * use dosamigos\google\maps\Map;
+ * use panix\lib\google\maps\controls\MapTypeControlOptions;
+ * use panix\lib\google\maps\controls\MapTypeControlStyle;
+ * use panix\lib\google\maps\Map;
  *
  * $options = new MapTypeControlOptions(['style' => MapTypeControlStyle::DROPDOWN_MENU]);
  *
@@ -28,7 +28,7 @@ namespace dosamigos\google\maps\controls;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps\controls
+ * @package panix\lib\google\maps\controls
  */
 class MapTypeControlStyle
 {

@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps;
+namespace panix\lib\google\maps;
 
 use yii\base\InvalidConfigException;
 use yii\base\InvalidParamException;
@@ -18,7 +18,7 @@ use yii\base\Object;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class Event extends Object
 {

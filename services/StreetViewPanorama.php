@@ -4,10 +4,10 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\services;
+namespace panix\lib\google\maps\services;
 
 
-use dosamigos\google\maps\LatLng;
+use panix\lib\google\maps\LatLng;
 use yii\base\InvalidConfigException;
 
 /**
@@ -19,7 +19,7 @@ use yii\base\InvalidConfigException;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class StreetViewPanorama extends StreetViewPanoramaOptions
 {
@@ -65,7 +65,7 @@ class StreetViewPanorama extends StreetViewPanoramaOptions
             "new google.maps.StreetViewPanorama(document.getElementById('{$this->nodeId}'),{$this->getEncodedOptions()});";
 
         foreach ($this->events as $event) {
-            /** @var \dosamigos\google\maps\Event $event */
+            /** @var \panix\lib\google\maps\Event $event */
             $js[] = $event->getJs($this->getName());
         }
 

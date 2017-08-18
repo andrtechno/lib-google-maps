@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps;
+namespace panix\lib\google\maps;
 
 use Exception;
 use Yii;
@@ -20,7 +20,7 @@ use GuzzleHttp\Client as HttpClient;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 abstract class ClientAbstract extends Object
 {

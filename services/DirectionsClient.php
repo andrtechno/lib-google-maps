@@ -4,9 +4,9 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\services;
+namespace panix\lib\google\maps\services;
 
-use dosamigos\google\maps\ClientAbstract;
+use panix\lib\google\maps\ClientAbstract;
 use yii\helpers\ArrayHelper;
 use yii\base\InvalidConfigException;
 use Yii;
@@ -20,7 +20,7 @@ use Yii;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class DirectionsClient extends ClientAbstract
 {

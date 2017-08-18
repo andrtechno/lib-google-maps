@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\controls;
+namespace panix\lib\google\maps\controls;
 
 
 /**
@@ -19,7 +19,7 @@ namespace dosamigos\google\maps\controls;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps\controls
+ * @package panix\lib\google\maps\controls
  */
 class ZoomControlStyle
 {

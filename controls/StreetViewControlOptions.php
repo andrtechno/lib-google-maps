@@ -4,10 +4,10 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\controls;
+namespace panix\lib\google\maps\controls;
 
-use dosamigos\google\maps\ObjectAbstract;
-use dosamigos\google\maps\OptionsTrait;
+use panix\lib\google\maps\ObjectAbstract;
+use panix\lib\google\maps\OptionsTrait;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 
@@ -28,7 +28,7 @@ use yii\helpers\ArrayHelper;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class StreetViewControlOptions extends ObjectAbstract
 {

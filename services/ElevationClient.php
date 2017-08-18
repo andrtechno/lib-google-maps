@@ -4,10 +4,10 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\google\maps\services;
+namespace panix\lib\google\maps\services;
 
-use dosamigos\google\maps\ClientAbstract;
-use dosamigos\google\maps\Encoder;
+use panix\lib\google\maps\ClientAbstract;
+use panix\lib\google\maps\Encoder;
 use yii\helpers\ArrayHelper;
 use Yii;
 
@@ -20,7 +20,7 @@ use Yii;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\google\maps
+ * @package panix\lib\google\maps
  */
 class ElevationClient extends ClientAbstract
 {
@@ -54,7 +54,7 @@ class ElevationClient extends ClientAbstract
     /**
      * Makes elevation request by locations
      *
-     * @param \dosamigos\google\maps\LatLng[] $coords
+     * @param \panix\lib\google\maps\LatLng[] $coords
      * @param bool $encode
      *
      * @return mixed|null
@@ -71,7 +71,7 @@ class ElevationClient extends ClientAbstract
     /**
      * Makes elevation request by paths
      *
-     * @param \dosamigos\google\maps\LatLng[] $coords defines a path on the earth for which to return elevation data.
+     * @param \panix\lib\google\maps\LatLng[] $coords defines a path on the earth for which to return elevation data.
      * @param int $samples specifies the number of sample points along a path for which to return the elevation data.
      * @param bool $encode
      *
