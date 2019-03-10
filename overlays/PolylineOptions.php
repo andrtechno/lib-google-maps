@@ -95,7 +95,7 @@ class PolylineOptions extends ObjectAbstract
      */
     public function addCoord(LatLng $coord)
     {
-        $this->options['path'][] = new JsExpression($coord);
+        $this->options['path'][] = $coord;
     }
 
     /**
