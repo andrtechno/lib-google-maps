@@ -35,7 +35,7 @@ use yii\helpers\ArrayHelper;
  * shortcuts are enabled by default.
  * @property boolean mapMaker True if Map Maker tiles should be used instead of regular tiles.
  * @property boolean mapTypeControl The initial enabled/disabled state of the Map type control.
- * @property [\doamigos\maps\controls\MapTypeControlOptions] mapTypeControlOptions The initial display options for the
+ * @property [\panix\lib\google\maps\controls\MapTypeControlOptions] mapTypeControlOptions The initial display options for the
  * Map type control.
  * @property string mapTypeId The initial Map mapTypeId. Defaults to [MapTypeId::ROADMAP].
  * @property int maxZoom The maximum zoom level which will be displayed on the map. If omitted, or set to null,
@@ -44,25 +44,25 @@ use yii\helpers\ArrayHelper;
  * the minimum zoom from the current map type is used instead.
  * @property boolean noClearIf true, do not clear the contents of the Map div.
  * @property boolean overviewMapControlThe enabled/disabled state of the Overview Map control.
- * @property [\doamigos\maps\controls\OverViewMapControlOptions] overviewMapControlOptions The display options for the
+ * @property [\panix\lib\google\maps\controls\OverViewMapControlOptions] overviewMapControlOptions The display options for the
  * Overview Map control.
  * @property boolean panControlThe enabled/disabled state of the Pan control.
- * @property[\doamigos\maps\controls\PanControlOptions] panControlOptions The display options for the Pan control.
+ * @property[\panix\lib\google\maps\controls\PanControlOptions] panControlOptions The display options for the Pan control.
  * @property boolean rotateControlThe enabled/disabled state of the Rotate control.
  * @property RotateControlOptions rotateControlOptions The display options for the Rotate control.
  * @property boolean scaleControlThe initial enabled/disabled state of the Scale control.
- * @property [\doamigos\maps\controls\ScaleControlOptions] scaleControlOptions The initial display
+ * @property [\panix\lib\google\maps\controls\ScaleControlOptions] scaleControlOptions The initial display
  * options for the Scale control.
  * @property boolean scrollwheel If false, disables scrollwheel zooming on the map. The scrollwheel is enabled by
  * default.
- * @property [\doamigos\maps\services\StreetViewPanorama] streetView A StreetViewPanorama to display when the Street
+ * @property [\panix\lib\google\maps\services\StreetViewPanorama] streetView A StreetViewPanorama to display when the Street
  * View pegman is dropped on
  * the map. If no panorama is specified, a default StreetViewPanorama will be displayed in the map's div when the pegman
  * is dropped.
  * @property boolean streetViewControlThe initial enabled/disabled state of the Street View Pegman control. This control
  * is part of the default UI, and should be set to false when displaying a map type on which the Street View road overlay
  * should not appear (e.g. a non-Earth map type).
- * @property [\doamigos\maps\controls\StreetViewControlOptions] streetViewControlOptions The initial display options
+ * @property [\panix\lib\google\maps\controls\StreetViewControlOptions] streetViewControlOptions The initial display options
  * for the Street View Pegman control.
  * @property array styles Styles to apply to each of the default map types. Note that for Satellite/Hybrid and Terrain
  * modes, these styles will only apply to labels and geometry.
@@ -75,7 +75,7 @@ use yii\helpers\ArrayHelper;
  * this option refer to different things, do not bind() the tilt property; doing so may yield unpredictable effects.
  * @property int zoom The initial Map zoom level. Required.
  * @property boolean zoomControlThe enabled/disabled state of the Zoom control.
- * @property [\doamigos\maps\controls\ZoomControlOptions] zoomControlOptions The display options for the Zoom control.
+ * @property [\panix\lib\google\maps\controls\ZoomControlOptions] zoomControlOptions The display options for the Zoom control.
  *
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
