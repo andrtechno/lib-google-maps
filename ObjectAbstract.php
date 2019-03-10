@@ -7,12 +7,12 @@
 namespace panix\lib\google\maps;
 
 
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
 use yii\helpers\Json;
 use yii\web\JsExpression;
-use yii\base\InvalidParamException;
+use yii\base\InvalidArgumentException;
 
 /**
  * ObjectAbstract
@@ -24,7 +24,7 @@ use yii\base\InvalidParamException;
  * @link http://www.2amigos.us/
  * @package panix\lib\google\maps
  */
-abstract class ObjectAbstract extends Object
+abstract class ObjectAbstract extends BaseObject
 {
     /**
      * @var integer a counter used to generate [[id]] for map objects.
@@ -153,7 +153,7 @@ abstract class ObjectAbstract extends Object
         try {
             // a value may contain a valid JSON string
             return Json::decode($value);
-        } catch (InvalidParamException $e) {
+        } catch (InvalidArgumentException $e) {
 
         }
         return $value;

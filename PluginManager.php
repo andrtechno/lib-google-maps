@@ -7,7 +7,7 @@
 namespace panix\lib\google\maps;
 
 
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -20,7 +20,7 @@ use yii\helpers\ArrayHelper;
  * @link http://www.2amigos.us/
  * @package panix\lib\google\maps
  */
-class PluginManager extends Object
+class PluginManager extends BaseObject
 {
     /**
      * @var array stores the managed plugins
@@ -32,7 +32,7 @@ class PluginManager extends Object
      *
      * @param string $name
      *
-     * @return mixed|void
+     * @return mixed
      */
     public function __get($name)
     {

@@ -9,8 +9,8 @@ namespace panix\lib\google\maps;
 
 use panix\lib\google\maps\overlays\Marker;
 use panix\lib\google\maps\overlays\Polygon;
-use yii\base\InvalidParamException;
-use yii\base\Object;
+use yii\base\InvalidArgumentException;
+use yii\base\BaseObject;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -23,7 +23,7 @@ use yii\helpers\ArrayHelper;
  * @link http://www.2amigos.us/
  * @package panix\lib\google\maps
  */
-class LatLngBounds extends Object
+class LatLngBounds extends BaseObject
 {
     /**
      * @var LatLng|null South West coordinate
@@ -289,7 +289,7 @@ class LatLngBounds extends Object
         $maxLng = -1000;
         foreach ($boundaries as $bounds) {
             if (!($bounds instanceof LatLngBounds)) {
-                throw new InvalidParamException('"$boundaries" must be an array of "' . self::className() . '" objects');
+                throw new InvalidArgumentException('"$boundaries" must be an array of "' . self::className() . '" objects');
             }
             $minLat = min($minLat, $bounds->getSouthWest()->getLat());
             $minLng = min($minLng, $bounds->getSouthWest()->getLng());
@@ -326,7 +326,7 @@ class LatLngBounds extends Object
         $maxLng = -1000;
         foreach ($coords as $coord) {
             if (!($coord instanceof LatLng)) {
-                throw new InvalidParamException('$coords must be an array of "' . LatLng::className() . '" objects');
+                throw new InvalidArgumentException('$coords must be an array of "' . LatLng::className() . '" objects');
             }
             /* @var $coord LatLng */
             $minLat = min($minLat, $coord->getLat());
@@ -359,7 +359,7 @@ class LatLngBounds extends Object
         $coords = [];
         foreach ($markers as $marker) {
             if (!($marker instanceof Marker)) {
-                throw new InvalidParamException('"$markers" must be an array of "' . Marker::className() . '" objects');
+                throw new InvalidArgumentException('"$markers" must be an array of "' . Marker::className() . '" objects');
             }
             $coords[] = $marker->position;
         }
@@ -380,7 +380,7 @@ class LatLngBounds extends Object
         /** @var Polygon $polygon */
         foreach ($polygons as $polygon) {
             if (!($polygon instanceof Polygon)) {
-                throw new InvalidParamException('"$polygons" must be an array of "' . Polygon::className() . '" objects');
+                throw new InvalidArgumentException('"$polygons" must be an array of "' . Polygon::className() . '" objects');
             }
             // merge LatLng arrays
             $coords = ArrayHelper::merge($coords, $polygon->paths);

@@ -7,8 +7,8 @@
 namespace panix\lib\google\maps;
 
 use yii\base\InvalidConfigException;
-use yii\base\InvalidParamException;
-use yii\base\Object;
+use yii\base\InvalidArgumentException;
+use yii\base\BaseObject;
 
 /**
  * Event
@@ -20,7 +20,7 @@ use yii\base\Object;
  * @link http://www.2amigos.us/
  * @package panix\lib\google\maps
  */
-class Event extends Object
+class Event extends BaseObject
 {
     /**
      * @var string the action that will trigger the event
@@ -64,7 +64,7 @@ class Event extends Object
     public function setType($value)
     {
         if (!EventType::getIsValid($value)) {
-            throw new InvalidParamException('Unrecognized event type');
+            throw new InvalidArgumentException('Unrecognized event type');
         }
         $this->_type = $value;
     }

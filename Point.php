@@ -7,7 +7,7 @@
 namespace panix\lib\google\maps;
 
 use yii\base\InvalidConfigException;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * Point
@@ -19,7 +19,7 @@ use yii\base\Object;
  * @link http://www.2amigos.us/
  * @package panix\lib\google\maps
  */
-class Point extends Object
+class Point extends BaseObject
 {
     /**
      *

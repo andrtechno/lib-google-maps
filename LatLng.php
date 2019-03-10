@@ -6,7 +6,7 @@
  */
 namespace panix\lib\google\maps;
 
-use yii\base\InvalidParamException;
+use yii\base\InvalidArgumentException;
 
 /**
  * LatLng
@@ -316,7 +316,7 @@ class LatLng extends ObjectAbstract
 
         foreach ($coords as $coord) {
             if (!($coord instanceof LatLng)) {
-                throw new InvalidParamException('$coord must be an array of "' . self::className() . '" objects');
+                throw new InvalidArgumentException('$coord must be an array of "' . self::className() . '" objects');
             }
             $centerLat += $coord->getLat();
             $centerLng += $coord->getLng();

@@ -1,7 +1,7 @@
 lib-google-maps
 ========================
 
-Google Maps API library for CORNER CMS
+Google Maps API library for PIXELION CMS
 
 [![Latest Stable Version](https://poser.pugx.org/panix/lib-google-maps/v/stable.svg)](https://packagist.org/packages/panix/lib-google-maps) [![Total Downloads](https://poser.pugx.org/panix/lib-google-maps/downloads.svg)](https://packagist.org/packages/panix/lib-google-maps) [![Latest Unstable Version](https://poser.pugx.org/panix/lib-google-maps/v/unstable.svg)](https://packagist.org/packages/panix/lib-google-maps) [![License](https://poser.pugx.org/panix/lib-google-maps/license.svg)](https://packagist.org/packages/panix/lib-google-maps)
 

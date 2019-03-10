@@ -1,14 +1,14 @@
 {
     "name": "panix/lib-google-maps",
-    "description": "Google Maps API library for CORNER CMS",
-    "keywords": ["corner-cms", "extension", "library", "google", "maps"],
+    "description": "Google Maps API library for PIXELION CMS",
+    "keywords": ["pixelion-cms", "extension", "library", "google", "maps"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "CORNER CMS",
-            "email": "dev@corner-cms.com",
-            "homepage": "http://www.corner-cms.com/"
+            "name": "PIXELION CMS",
+            "email": "dev@pixelion.com.ua",
+            "homepage": "https://pixelion.com.ua"
         }
     ],
     "require": {
