@@ -2,7 +2,7 @@
     "name": "panix/lib-google-maps",
     "description": "Google Maps API library for PIXELION CMS",
     "keywords": ["pixelion-cms", "extension", "library", "google", "maps"],
-    "type": "library",
+    "type": "yii2-extension",
     "license": "MIT",
     "authors": [
         {
