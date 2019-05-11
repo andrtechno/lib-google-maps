@@ -12,7 +12,7 @@ Google Maps API library for PIXELION CMS
 Либо запустите
 
 ```
-php composer.phar require "panix/lib-google-maps" "*"
+php composer require "panix/lib-google-maps" "*"
 ```
 Или добавить
 
