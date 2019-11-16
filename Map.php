@@ -150,6 +150,7 @@ class Map extends ObjectAbstract
                 'streetViewControlOptions' => null,
                 'styles' => null,
                 'tilt' => null,
+                'fullscreenControl' => null,
                 'zoom' => null,
                 'zoomControl' => null,
                 'zoomControlOptions' => null,

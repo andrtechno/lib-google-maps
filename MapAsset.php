@@ -61,10 +61,10 @@ class MapAsset extends AssetBundle
         $libraries = @Yii::$app->params['googleMapsLibraries'];
         // To configure please, add `googleMapsLanguage` parameter to your application configuration
         $language = Yii::$app->language;
-        $this->options['version'] = '3.39';
+        $this->options['version'] = '3.38';
         $this->options = array_merge($this->options, array_filter([
             'key' => $key,
-            'libraries' => $libraries,
+
             'language' => $language
         ]));
         // BACKWARD COMPATIBILITY
